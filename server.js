@@ -8,3 +8,7 @@ app.use(cookieParser());
 app.listen(3000, () =>{
     console.lod("Server running on port 3000");
 });
+
+
+const authRoutes = require("./routes/authRoutes");
+app.use("/api", authRoutes);
